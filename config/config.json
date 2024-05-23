@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "qp_user",
+    "password": "qp_db_123",
+    "database": "qp_db",
+    "host": "db",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "qp_user",
+    "password": "qp_db_123",
+    "database": "qp_db",
+    "host": "db",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "qp_user",
+    "password": "qp_db_123",
+    "database": "qp_db",
+    "host": "db",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}

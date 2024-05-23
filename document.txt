@@ -1,0 +1,18 @@
+npm init -y
+npm install express pg sequelize
+npm install --save-dev nodemon
+npm install --save-dev sequelize-cli
+npx sequelize-cli init
+npx sequelize-cli model:generate --name User --attributes name:string,email:string,password:string,type:string
+npx sequelize-cli model:generate --name Grocery --attributes name:string,price:float,available_quantity:integer,log:jsonb
+update user.js and grocery.js in models, also update migrations
+npx sequelize-cli db:migrate
+npm install jsonwebtoken
+npm install bcrypt
+npm install joi
+npx sequelize-cli migration:generate --name create-log
+npx sequelize-cli migration:generate --name modify-grocery
+npx sequelize-cli migration:generate --name create-orders
+npx sequelize-cli migration:generate --name create-order-items
+npx sequelize-cli migration:generate --name update-log-actions-enum
+npm install typescript @types/node @types/express @types/bcrypt @types/jsonwebtoken @types/pg @types/sequelize
