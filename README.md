@@ -30,5 +30,22 @@ This project is a Grocery Management API built with Node.js, Express, and Postgr
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/grocery-management-api.git
-cd grocery-management-api
+git clone https://github.com/grv20/qp-assessment.git
+cd qp-assessment
+```
+
+## Set Up Environment Variables
+
+Create a .env file in the root directory of the project and add the following:
+
+DATABASE_URL=postgres://qp_user:qp_db_123@db:5432/qp_db
+PORT=3000
+JWT_SECRET=your_jwt_secret_key
+
+## Start Docker
+
+Create a .env file in the root directory of the project and add the following:
+
+```bash
+docker compose up --build
+```
