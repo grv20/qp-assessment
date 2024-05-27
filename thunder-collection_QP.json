@@ -1,0 +1,155 @@
+{
+  "clientName": "Thunder Client",
+  "collectionName": "QP",
+  "collectionId": "ab27b76c-1657-45bc-9df0-878157f7f05d",
+  "dateExported": "2024-05-27T13:54:46.224Z",
+  "version": "1.2",
+  "folders": [
+    {
+      "_id": "38a5f51c-c3a3-430f-b2ae-9811ba23d9e0",
+      "name": "Groceries",
+      "containerId": "",
+      "created": "2024-05-21T01:30:49.219Z",
+      "sortNum": 20000
+    },
+    {
+      "_id": "fd09be0a-89e1-4e6b-a7fe-0bc12e6009de",
+      "name": "Auth",
+      "containerId": "",
+      "created": "2024-05-21T01:31:03.375Z",
+      "sortNum": 30000
+    }
+  ],
+  "requests": [
+    {
+      "_id": "2b26a820-9c69-4861-b351-4f6f7b6b7aa9",
+      "colId": "ab27b76c-1657-45bc-9df0-878157f7f05d",
+      "containerId": "38a5f51c-c3a3-430f-b2ae-9811ba23d9e0",
+      "name": "Get All Groceries",
+      "url": "localhost:3000/groceries/",
+      "method": "GET",
+      "sortNum": 10000,
+      "created": "2024-05-19T10:44:51.501Z",
+      "modified": "2024-05-22T01:41:33.656Z",
+      "headers": [],
+      "auth": {
+        "type": "bearer",
+        "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzE2MzQyMDg0LCJleHAiOjE3MTYzNDU2ODR9.HOe3A9iE_H9V34sUcPiOzD0U-KlPGsIb21JPLAbN1nw"
+      }
+    },
+    {
+      "_id": "cc26ba57-c2de-404c-b9cf-5f69edfe5d08",
+      "colId": "ab27b76c-1657-45bc-9df0-878157f7f05d",
+      "containerId": "fd09be0a-89e1-4e6b-a7fe-0bc12e6009de",
+      "name": "Login",
+      "url": "localhost:3000/auth/login",
+      "method": "POST",
+      "sortNum": 10000,
+      "created": "2024-05-19T10:45:50.575Z",
+      "modified": "2024-05-22T02:42:13.222Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n\"email\":\"ashok@gmail.com\",\n  \"password\":\"Grv@123\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "c8848bdc-39d6-41ce-b277-d801f4a4451e",
+      "colId": "ab27b76c-1657-45bc-9df0-878157f7f05d",
+      "containerId": "fd09be0a-89e1-4e6b-a7fe-0bc12e6009de",
+      "name": "Register User",
+      "url": "localhost:3000/auth/register",
+      "method": "POST",
+      "sortNum": 20000,
+      "created": "2024-05-19T11:22:06.044Z",
+      "modified": "2024-05-23T02:02:53.029Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\":\"Ashok Kumar\",\n  \"email\":\"ashok@gmail.com\",\n  \"password\":\"Grv@123\",\n  \"type\":\"user\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "a0cae4a4-3382-4c49-b2ce-5b80bcb0e802",
+      "colId": "ab27b76c-1657-45bc-9df0-878157f7f05d",
+      "containerId": "38a5f51c-c3a3-430f-b2ae-9811ba23d9e0",
+      "name": "Create Grocery Item",
+      "url": "localhost:3000/groceries",
+      "method": "POST",
+      "sortNum": 20000,
+      "created": "2024-05-21T01:30:09.047Z",
+      "modified": "2024-05-21T02:24:00.459Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"Garlic\",\n  \"price\": 350.00\n}",
+        "form": []
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzE2MjU4MjE2LCJleHAiOjE3MTYyNjE4MTZ9.eKtyFA_1-B2r3yjMGhATjIbwWaoxtGjoJcNLK1jG-pw"
+      }
+    },
+    {
+      "_id": "66edb311-cdb6-4d7f-adc9-be75bc00ab80",
+      "colId": "ab27b76c-1657-45bc-9df0-878157f7f05d",
+      "containerId": "38a5f51c-c3a3-430f-b2ae-9811ba23d9e0",
+      "name": "Get Grocery",
+      "url": "localhost:3000/groceries/1/",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2024-05-22T01:41:56.098Z",
+      "modified": "2024-05-22T02:43:36.016Z",
+      "headers": [],
+      "auth": {
+        "type": "bearer",
+        "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzE2MzQ1NzMzLCJleHAiOjE3MTYzNDkzMzN9.TVIm_WCRjY3k7a_Tajod-apedBoRNCYe02HaV-s-CMQ"
+      }
+    },
+    {
+      "_id": "2fba90ee-b159-4acf-9ada-8681c3871e1a",
+      "colId": "ab27b76c-1657-45bc-9df0-878157f7f05d",
+      "containerId": "38a5f51c-c3a3-430f-b2ae-9811ba23d9e0",
+      "name": "Create Order",
+      "url": "localhost:3000/orders",
+      "method": "POST",
+      "sortNum": 25000,
+      "created": "2024-05-22T02:14:59.352Z",
+      "modified": "2024-05-22T02:42:22.894Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"items\": [\n    {\n      \"groceryId\": 1,\n      \"quantity\": 3\n    },\n    {\n      \"groceryId\": 2,\n      \"quantity\": 1\n    }\n  ]\n}",
+        "form": []
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzE2MzQ1NzMzLCJleHAiOjE3MTYzNDkzMzN9.TVIm_WCRjY3k7a_Tajod-apedBoRNCYe02HaV-s-CMQ"
+      }
+    },
+    {
+      "_id": "f23331e5-16ea-4bfd-b0a4-8784fea5b346",
+      "colId": "ab27b76c-1657-45bc-9df0-878157f7f05d",
+      "containerId": "38a5f51c-c3a3-430f-b2ae-9811ba23d9e0",
+      "name": "Update Grocery Item",
+      "url": "localhost:3000/groceries/4/",
+      "method": "PUT",
+      "sortNum": 30000,
+      "created": "2024-05-21T01:39:47.498Z",
+      "modified": "2024-05-22T01:47:37.337Z",
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"amount\": -5\n}",
+        "form": []
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzE2MzQyNDQ3LCJleHAiOjE3MTYzNDYwNDd9.vLuNQHTgsNVv4Z7GdmdnZXzT55BA0BToN7ISY9ayUtI"
+      }
+    }
+  ],
+  "ref": "Gdi2IH13mrYQayU8YZMokxYWj9e4Nid8eV4PgEphH9Ok9aNq2dmZOs2zA3L1YtPhb0HG1Cj-_fE2XsiNb_k8Uw"
+}
