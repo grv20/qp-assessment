@@ -38,9 +38,11 @@ cd qp-assessment
 
 Create a .env file in the root directory of the project and add the following:
 
+```bash
 DATABASE_URL=postgres://qp_user:qp_db_123@db:5432/qp_db
 PORT=3000
 JWT_SECRET=your_jwt_secret_key
+```
 
 ## Start Docker
 
